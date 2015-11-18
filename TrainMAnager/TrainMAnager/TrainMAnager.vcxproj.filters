@@ -45,6 +45,21 @@
     <ClInclude Include="ElectricLocomotive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MotorLocomotive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Closed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cistern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Open.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -72,6 +87,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ElectricLocomotive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorLocomotive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Closed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cistern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Open.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

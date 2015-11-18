@@ -81,9 +81,14 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoxCar.h" />
+    <ClInclude Include="Cistern.h" />
+    <ClInclude Include="Closed.h" />
     <ClInclude Include="DiningCar.h" />
     <ClInclude Include="ElectricLocomotive.h" />
     <ClInclude Include="Locomotive.h" />
+    <ClInclude Include="MotorLocomotive.h" />
+    <ClInclude Include="Open.h" />
     <ClInclude Include="Personal.h" />
     <ClInclude Include="SleepingCar.h" />
     <ClInclude Include="stdafx.h" />
@@ -92,9 +97,14 @@
     <ClInclude Include="Wagon.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BoxCar.cpp" />
+    <ClCompile Include="Cistern.cpp" />
+    <ClCompile Include="Closed.cpp" />
     <ClCompile Include="DiningCar.cpp" />
     <ClCompile Include="ElectricLocomotive.cpp" />
     <ClCompile Include="Locomotive.cpp" />
+    <ClCompile Include="MotorLocomotive.cpp" />
+    <ClCompile Include="Open.cpp" />
     <ClCompile Include="Personal.cpp" />
     <ClCompile Include="SleepingCar.cpp" />
     <ClCompile Include="stdafx.cpp" />
