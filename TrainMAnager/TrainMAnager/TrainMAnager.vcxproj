@@ -81,12 +81,26 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DiningCar.h" />
+    <ClInclude Include="ElectricLocomotive.h" />
+    <ClInclude Include="Locomotive.h" />
+    <ClInclude Include="Personal.h" />
+    <ClInclude Include="SleepingCar.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SteamLocomotive.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Wagon.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DiningCar.cpp" />
+    <ClCompile Include="ElectricLocomotive.cpp" />
+    <ClCompile Include="Locomotive.cpp" />
+    <ClCompile Include="Personal.cpp" />
+    <ClCompile Include="SleepingCar.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SteamLocomotive.cpp" />
     <ClCompile Include="TrainMAnager.cpp" />
+    <ClCompile Include="Wagon.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
