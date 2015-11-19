@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include  <iomanip>
 class Wagon
 {
 public:
@@ -19,10 +21,13 @@ protected:
 public:
 
 	//return weight of wagon
-	int GetWeight() const;
+	int getWeight() const;
 
 	//return maximum speed of wagon
-	int GetMaxSpeed() const;
+	int getMaxSpeed() const;
+
+	//prints status
+	virtual void getStatus() const;
 
 };
 

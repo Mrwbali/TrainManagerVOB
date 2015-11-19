@@ -1,7 +1,7 @@
 #pragma once
 #include "BoxCar.h"
 class Closed :
-	BoxCar
+	public BoxCar
 {
 public:
 

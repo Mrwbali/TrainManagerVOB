@@ -1,6 +1,6 @@
 #pragma once
 #include "Personal.h"
-class DiningCar : Personal
+class DiningCar : public Personal
 {
 
 

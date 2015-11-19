@@ -1,7 +1,7 @@
 #pragma once
 #include "Personal.h"
 class SleepingCar :
-	Personal
+	public Personal
 {
 
 public:

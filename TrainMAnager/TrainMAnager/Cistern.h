@@ -1,7 +1,7 @@
 #pragma once
 #include "BoxCar.h"
 class Cistern :
-	BoxCar
+ 	public BoxCar
 {
 public:
 
@@ -17,8 +17,11 @@ private:
 
 public:
 
-	// //return true if cistern is for toxic
+	//return true if cistern is for toxic
 	bool getToxic() const;
+
+	//prints status
+	virtual void getStatus() const;
 
 };
 

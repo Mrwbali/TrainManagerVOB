@@ -21,3 +21,11 @@ bool Cistern::getToxic() const
 {
 	return toxic_b;
 }
+
+void Cistern::getStatus() const
+{
+	std::cout << "Weight: " << getWeight() << "kg" << std::endl;
+	std::cout << "Max speed: " << getMaxSpeed() << "km/h" << std::endl;
+	std::cout << "Max load:" << getMaxLoad() << "kg" << std::endl;
+	std::cout << "Toxic: " << getToxic() <<  std::endl;
+}

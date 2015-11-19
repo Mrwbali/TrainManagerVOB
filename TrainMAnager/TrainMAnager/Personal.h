@@ -1,7 +1,7 @@
 #pragma once
 #include "Wagon.h"
 class Personal :
-	Wagon
+	public Wagon
 {
 public:
 

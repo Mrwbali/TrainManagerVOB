@@ -20,14 +20,19 @@ Wagon::~Wagon()
 }
 
 //return weight of wagon
-int Wagon::GetWeight() const
+int Wagon::getWeight() const
 {
 	return weight_i;
 }
 
 //return maximum speed of wagon
-int Wagon::GetMaxSpeed() const
+int Wagon::getMaxSpeed() const
 {
 	return max_speed_i;
 }
 
+void Wagon::getStatus() const
+{
+	std::cout << "Weight: " << getWeight() << "kg" << std::endl;
+	std::cout << "Max speed: " << getMaxSpeed() << "km/h" << std::endl;
+}

@@ -1,7 +1,7 @@
 #pragma once
 #include "Locomotive.h"
 class MotorLocomotive :
-	Locomotive
+	public Locomotive
 {
 public:
 	enum trans

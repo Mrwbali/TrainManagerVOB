@@ -1,7 +1,7 @@
 #pragma once
 #include "Locomotive.h"
 class ElectricLocomotive :
-	Locomotive
+	public Locomotive
 {
 public:
 
