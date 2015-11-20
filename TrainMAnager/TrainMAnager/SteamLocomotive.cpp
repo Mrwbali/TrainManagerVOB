@@ -8,7 +8,7 @@ SteamLocomotive::SteamLocomotive() : Locomotive()
 	coal_stock_i = 0;
 }
 
-SteamLocomotive::SteamLocomotive(int weight_i, int max_speed_i, int max_weight_i, int power_i, int water_tank_f_i, int coal_stock_f_i) : Locomotive(weight_i, max_speed_i, max_weight_i, power_i)
+SteamLocomotive::SteamLocomotive(std::string name_string, int weight_i, int max_speed_i, int max_weight_i, int power_i, int water_tank_f_i, int coal_stock_f_i) : Locomotive(name_string, weight_i, max_speed_i, max_weight_i, power_i)
 {
 	water_tank_i = water_tank_f_i;
 	
@@ -31,4 +31,11 @@ int SteamLocomotive::getWaterTank() const
 int SteamLocomotive::getCoalStock() const
 {
 	return coal_stock_i;
+}
+
+void SteamLocomotive::getStatus() const
+{
+	Locomotive::getStatus();
+
+	std::cout << "Size of coal stock: " << getCoalStock() << "kg" << std::endl;
 }

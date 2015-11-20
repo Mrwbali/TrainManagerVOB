@@ -6,7 +6,7 @@ Cistern::Cistern() : BoxCar()
 	toxic_b = false;
 }
 
-Cistern::Cistern(int weight_i, int max_speed_i, int max_load_i, bool toxic_f_b) : BoxCar(weight_i, max_speed_i, max_load_i)
+Cistern::Cistern(std::string name_string, int weight_i, int max_speed_i, int max_load_i, bool toxic_f_b) : BoxCar(name_string, weight_i, max_speed_i, max_load_i)
 {
 	toxic_b = toxic_f_b;
 }
@@ -24,8 +24,13 @@ bool Cistern::getToxic() const
 
 void Cistern::getStatus() const
 {
-	std::cout << "Weight: " << getWeight() << "kg" << std::endl;
-	std::cout << "Max speed: " << getMaxSpeed() << "km/h" << std::endl;
-	std::cout << "Max load:" << getMaxLoad() << "kg" << std::endl;
-	std::cout << "Toxic: " << getToxic() <<  std::endl;
+	BoxCar::getStatus();
+	if (getToxic())
+	{
+		std::cout << "Toxic: " << "Yes" << std::endl;
+	}
+	else
+	{
+		std::cout << "Toxic: " << "NO" << std::endl;
+	}
 }

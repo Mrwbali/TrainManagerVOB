@@ -7,7 +7,7 @@ public:
 
 	SteamLocomotive();
 
-	SteamLocomotive(int weight_i, int max_speed_i, int max_weight_i, int power_i, int water_tank_i, int coal_stock_i);
+	SteamLocomotive(std::string name_string, int weight_i, int max_speed_i, int max_weight_i, int power_i, int water_tank_i, int coal_stock_i);
 
 	virtual ~SteamLocomotive();
 
@@ -24,5 +24,8 @@ public:
 
 	// get capacity of coal stock
 	int getCoalStock() const;
+
+	//prints status
+	virtual void getStatus() const;
 };
 

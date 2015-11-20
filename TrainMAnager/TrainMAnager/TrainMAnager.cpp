@@ -12,11 +12,21 @@
 int _tmain(int argc, _TCHAR* argv[])
 {	
 	std::string wwww;
-	std::vector<std::shared_ptr< Wagon >> boc_cars;
+	std::vector<std::shared_ptr< Wagon >> train_cars;
 	
-	boc_cars.push_back(std::shared_ptr<Wagon>(new Cistern(1500, 250, 100, false)));
+	train_cars.push_back(std::shared_ptr<Wagon>(new MotorLocomotive("T211", 50000, 40, 118, 147, MotorLocomotive::ELECTRIC)));
+
+	train_cars.push_back(std::shared_ptr<Wagon>(new Cistern("Zacs", 22700, 40, 83000, false)));
 	
-	boc_cars.at(0)->getStatus();
+	train_cars.push_back(std::shared_ptr<Wagon>(new Closed("Ibbhps 25", 17000, 70, 1800, true)));
+
+	for (int i = 0; i <= train_cars.size(); i++)
+	{	
+		std::cout << "i = " << i;
+		std::cout << train_cars.size() << std::endl;
+		train_cars.at(i)->getStatus();
+		std::cout << "--------------------------" << std::endl;
+	}
 	
 	return 0;
 }

@@ -7,7 +7,7 @@ public:
 
 	Open();
 
-	Open(int weight_i, int max_speed_i, int max_load_i, int partition_f_i);
+	Open(std::string name_string, int weight_i, int max_speed_i, int max_load_i, int partition_f_i);
 
 	virtual ~Open();
 
@@ -19,5 +19,8 @@ public:
 
 	//return number of partition
 	int getPartitiom() const;
+
+	//prints status
+	virtual void getStatus() const;
 };
 

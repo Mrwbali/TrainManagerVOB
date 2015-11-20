@@ -7,7 +7,7 @@ public:
 
 	Locomotive();
 
-	Locomotive(int weight_i, int max_speed_i, int max_weight_f_i, int power_f_i);
+	Locomotive(std::string name_string, int weight_i, int max_speed_i, int max_weight_f_i, int power_f_i);
 	
 	virtual ~Locomotive();
 
@@ -24,5 +24,8 @@ public:
 
 	// return power of the locomotive
 	int getPower() const;
+
+	//prints status
+	virtual void getStatus() const;
 };
 

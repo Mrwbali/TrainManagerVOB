@@ -7,7 +7,7 @@ public:
 
 	Personal();
 
-	Personal(int weight_i, int max_speed_i, int PlacesToSeat);
+	Personal(std::string name_string, int weight_i, int max_speed_i, int PlacesToSeat);
 
 	virtual ~Personal();
 
@@ -18,7 +18,10 @@ protected:
 public:
 	
 	// return number of places to seat
-	int GetPlacesToSeat() const;
+	int getPlacesToSeat() const;
+
+	//prints status
+	virtual void getStatus() const;
 
 };
 

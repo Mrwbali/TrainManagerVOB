@@ -7,7 +7,7 @@ Locomotive::Locomotive()
 	power_i = 0;
 }
 
-Locomotive::Locomotive(int weight_i, int max_speed_i, int max_weight_f_i, int power_f_i) : Wagon(weight_i, max_speed_i)
+Locomotive::Locomotive(std::string name_string, int weight_i, int max_speed_i, int max_weight_f_i, int power_f_i) : Wagon(name_string, weight_i, max_speed_i)
 {
 	max_weight_i = max_weight_f_i;
 	power_i = power_f_i;
@@ -30,4 +30,11 @@ int Locomotive::getMaxWeight() const
 int Locomotive::getPower() const
 {
 	return power_i;
+}
+
+void Locomotive::getStatus() const
+{
+	Wagon::getStatus();
+	std::cout << "Max weight: " << getMaxWeight() << "kg" << std::endl;
+	std::cout << "Power of locomotive: " <<getPower() << "kw" << std::endl;
 }

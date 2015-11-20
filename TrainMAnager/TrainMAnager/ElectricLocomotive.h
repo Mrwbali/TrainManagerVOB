@@ -12,7 +12,7 @@ public:
 
 	ElectricLocomotive();
 
-	ElectricLocomotive(int weight_i, int max_speed_i, int max_weight_i, int power_i, type_of_power_system power);
+	ElectricLocomotive(std::string name_string, int weight_i, int max_speed_i, int max_weight_i, int power_i, type_of_power_system power);
 
 	virtual ~ElectricLocomotive();
 
@@ -26,5 +26,7 @@ public:
 	// return using type of power system
 	type_of_power_system getUsingPowerSystem() const;
 
+	//prints status
+	virtual void getStatus() const;
 };
 
