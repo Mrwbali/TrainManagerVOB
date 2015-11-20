@@ -11,7 +11,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
-	std::string wwww;
+	std::string command_string;
 	std::vector<std::shared_ptr< Wagon >> train_cars;
 	
 	train_cars.push_back(std::shared_ptr<Wagon>(new MotorLocomotive("T211", 50000, 40, 118, 147, MotorLocomotive::ELECTRIC)));
@@ -20,14 +20,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 	train_cars.push_back(std::shared_ptr<Wagon>(new Closed("Ibbhps 25", 17000, 70, 1800, true)));
 
-	for (int i = 0; i <= train_cars.size(); i++)
+	for (int i = 0; i < train_cars.size(); i++)
 	{	
 		std::cout << "i = " << i;
 		std::cout << train_cars.size() << std::endl;
 		train_cars.at(i)->getStatus();
 		std::cout << "--------------------------" << std::endl;
 	}
-	
+	std::cin >> command_string;
 	return 0;
 }
 
