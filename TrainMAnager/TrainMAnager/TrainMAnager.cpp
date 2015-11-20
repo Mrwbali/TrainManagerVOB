@@ -24,17 +24,21 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	for (int i = 0; i < train_cars.size(); i++)
 	{	
-		std::cout << "i = " << i;
-		std::cout << train_cars.size() << std::endl;
 		train_cars.at(i)->getStatus();
+
 		std::cout << "--------------------------" << std::endl;
+
 		if (train_cars.at(i)->getMaxSpeed() < max_train_speed_i)
 		{
 			max_train_speed_i = train_cars.at(i)->getMaxSpeed();
 		}
+
 	}
+
 	std::cout << "Maximalni rychlost soustavy je: " << max_train_speed_i << " km/h" << std::endl;
+
 	std::cin >> command_string;
+
 	return 0;
 }
 
